@@ -1,0 +1,29 @@
+body {
+    background-color: darksalmon;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white; /* Adiciona uma borda para simular o cursor de digitação */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12ch; /* ou ajuste para o comprimento desejado */
+    }
+}
+
+h1 {
+    animation: typing 2s steps(19) infinite;
+}
